@@ -27,7 +27,7 @@ queue_length_per_time = []
 queue_length_per_customer = []
 max_finishing_time = 0
 
-# -------------------------------------------------------------#
+# ------------------------------------------------------------- #
 
 # Generate inter-arrival times
 inter_arrival_time = 1 / (numpy.random.poisson(arrival_rate, number_of_customers) + 1)
@@ -73,7 +73,7 @@ mean_arrival_rate = round(1 / (sum(inter_arrival_time) / number_of_customers))
 mean_service_rate = round(1 / (sum(service_time) / number_of_customers))
 utilization_rate = round(mean_arrival_rate / mean_service_rate * 100, 2)
 
-# --------------------------------Plotting Data-----------------------------------
+# --------------------------------Plotting Data----------------------------------- #
 message = "                  No. of customers = " + str(number_of_customers) \
           + "   λ = " + str(mean_arrival_rate) \
           + "   μ = " + str(mean_service_rate) \
